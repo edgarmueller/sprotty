@@ -40,6 +40,6 @@
       "check-separator",
       "check-type"
     ],
-    "semicolon": [ true, "never" ]
+    "semicolon": [ false, "never" ]
   }
 }

@@ -53,7 +53,7 @@ export class MouseTool implements IVNodeDecorator {
             return
         const actions = this.mouseListeners
             .map(listener => listener[methodName].apply(listener, [element, event]))
-            .reduce((a, b) => a.concat(b))
+            .reduce((a, b) => a.concat(b), [])
         if (actions.length > 0) {
             event.preventDefault()
             for (const actionOrPromise of actions) {
